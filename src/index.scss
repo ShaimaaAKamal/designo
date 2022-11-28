@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
+$peach:#E7816B;
+$lightPeach:#FFAD9B;
+$black:#1D1C1E;
+$darkGray:#333136;
+$lightGray:#F1F3F5;
+
+
+body{
+    font-family: 'Jost', sans-serif;
+    .button{
+        padding:1rem 1.2rem;
+        border-radius: 1rem;
+    }
+
+    .darkBtn{
+            @extend .button;
+            background-color:$lightGray;
+            color:$black;
+            &:hover{
+                background-color:$lightPeach;
+                color:#fff
+
+            }
+}
+    .lightBtn{
+            @extend .button;
+            background-color:$peach;
+            color:$black;
+            &:hover{
+                background-color:$lightPeach;
+                color:#fff
+
+            }
+}
+}
