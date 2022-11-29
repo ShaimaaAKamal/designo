@@ -43,12 +43,26 @@ body{
 .fs-7{
     font-size: 15px !important;
 }
-.imageBorderBottom{
-    border-bottom: 1px solid #2B2B2C;
+
+footer{
+    padding-top: 50px;
+    .imageBorderBottom{
+        border-bottom: 1px solid #2B2B2C;
+    }
+    .textFooter{
+    color:#8E8D8E;
+    }
+    .socials svg:hover path{
+        fill:$lightPeach;
+    }
+    .links a{
+        font-size: 12px;
+    }
+    .links a:hover{
+        text-decoration: underline!important;
+    }
 }
-.textFooter{
-   color:#555556;
-}
+
 }
 
 @media screen and (min-width:768px) {
@@ -74,11 +88,13 @@ body{
      .fs-7{
             font-size: 12px !important;
      }
-     .footerBorderBottom{
-     border-bottom: 1px solid #2B2B2C;
-}
-.imageBorderBottom{
-    border-bottom: none;
-}
+    footer{
+             .footerBorderBottom{
+                    border-bottom: 1px solid #2B2B2C;
+                }
+            .imageBorderBottom{
+                border-bottom: none;
+            }
+    }
    }
 }
