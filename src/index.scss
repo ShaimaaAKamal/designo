@@ -43,6 +43,12 @@ body{
 .fs-7{
     font-size: 15px !important;
 }
+.imageBorderBottom{
+    border-bottom: 1px solid #2B2B2C;
+}
+.textFooter{
+   color:#555556;
+}
 }
 
 @media screen and (min-width:768px) {
@@ -68,5 +74,11 @@ body{
      .fs-7{
             font-size: 12px !important;
      }
+     .footerBorderBottom{
+     border-bottom: 1px solid #2B2B2C;
+}
+.imageBorderBottom{
+    border-bottom: none;
+}
    }
 }
