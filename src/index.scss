@@ -10,6 +10,13 @@ $lightGray:#F1F3F5;
     background-color: $black;
 }
 body{
+      .imgLarge{
+            display: none;
+        }
+        .imgMedium{
+            display: none;
+        }
+        
     font-family: 'Jost', sans-serif;
     .button{
         padding:.8rem 1.5rem;
@@ -48,6 +55,9 @@ body{
 .fs-7{
     font-size: 15px !important;
 }
+.fs-sm{
+    font-size: .7rem;
+}
 .homeCaption{
     background-image:url('./assets/home/desktop/bg-pattern-hero-home.svg'),linear-gradient(rgba(231, 129, 107,1),rgba(231, 129, 107,1));
     background-repeat: no-repeat;
@@ -64,6 +74,15 @@ body{
             bottom:-350px !important;
           }
 }
+ .hoverCard{
+        background-color: #1d1c1e95;
+        &:hover{
+          background-color: #e7826bb4;
+        }
+        .hoverCardTitle{
+            letter-spacing: 2px;
+        }
+    }
 
 footer{
     padding-top: 50px;
@@ -88,6 +107,16 @@ footer{
 
 @media screen and (min-width:768px) {
    body{
+     .imgSmall{
+            display: none;
+        }
+        .imgLarge{
+            display: none;
+        }
+        .imgMedium{
+            display: inline-block;
+        }
+        
        .navbar-expand-lg .navbar-toggler {
         display: none;
     }
@@ -118,7 +147,7 @@ footer{
                         }
        
                 }
-
+   
     footer{
              .footerBorderBottom{
                     border-bottom: 1px solid #2B2B2C;
@@ -131,6 +160,16 @@ footer{
 }
 @media screen and (min-width:992px){
   body{
+      .imgSmall{
+            display: none;
+        }
+        .imgLarge{
+            display: inline-block;
+        }
+        .imgMedium{
+            display: none;
+        }
+
     .homeCaption{
              height:65vh !important;
             .paragWidth{
