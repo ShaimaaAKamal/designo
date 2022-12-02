@@ -9,6 +9,18 @@ $lightGray:#F1F3F5;
 .bgBlack{
     background-color: $black;
 }
+.ls{
+    letter-spacing: 2px;
+}
+.textDGary{
+    color: $darkGray;
+}
+.circle{
+    background-image: linear-gradient(30deg,#F2E8E8,#fff);
+    padding:2rem;
+    border-radius: 50%;
+    z-index:-1;
+}
 body{
       .imgLarge{
             display: none;
@@ -16,7 +28,7 @@ body{
         .imgMedium{
             display: none;
         }
-        
+
     font-family: 'Jost', sans-serif;
     .button{
         padding:.8rem 1.5rem;
