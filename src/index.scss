@@ -9,11 +9,30 @@ $lightGray:#F1F3F5;
 .bgBlack{
     background-color: $black;
 }
+.bgLightPeach{
+    background-color: #ffad9b6c;
+    &:hover{
+        background-color: $peach;
+        color:#fff;
+        .textSite{
+            color:#fff;
+        }
+    }
+}
+.roundedBottom{
+    border-radius: 0 0 1rem 1rem;
+}
+.roundedTop{
+    border-radius: 1rem 1rem 0 0;
+}
 .ls{
     letter-spacing: 2px;
 }
 .textDGary{
     color: $darkGray;
+}
+.textSite{
+    color:$peach;
 }
 .circle{
     background-image: linear-gradient(30deg,#F2E8E8,#fff);
@@ -132,6 +151,12 @@ footer{
 }
 
 @media screen and (min-width:768px) {
+.roundedBottom{
+    border-radius: 0 1rem 1rem 0;
+}
+.roundedTop{
+    border-radius: 1rem 0 0 1rem;
+}
    body{
      .imgSmall{
             display: none;
@@ -190,6 +215,12 @@ footer{
    }
 }
 @media screen and (min-width:992px){
+.roundedBottom{
+    border-radius: 0 0 1rem 1rem;
+}
+.roundedTop{
+    border-radius: 1rem 1rem 0 0 ;
+}
   body{
       .imgSmall{
             display: none;
