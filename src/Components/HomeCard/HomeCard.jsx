@@ -10,7 +10,7 @@ export default function HomeCard({Large,Medium,Small,title,route}) {
                 <div className='rounded-3 position-absolute w-100 h-100 top-0 d-flex align-items-center justify-content-center hoverCard'>
                     <div className='text-white text-center'>
                         <h6 className='display-6 text-uppercase hoverCardTitle'>{title}</h6>
-                         <Link to={route} className='fs-sm text-uppercase text-decoration-none text-reset'>View Projects</Link>
+                         <Link to={`/${route}`} className='fs-sm text-uppercase text-decoration-none text-reset'>View Projects</Link>
                     </div>
                 </div>
     </div>

@@ -35,7 +35,7 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto  mb-2 mb-md-0 p-3">
             <li className="nav-item">
-              <Link className="nav-link text-uppercase text-reset active fs-7" aria-current="page" to="About">our company</Link>
+              <Link className="nav-link text-uppercase text-reset active fs-7" aria-current="page" to="/About">our company</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link text-uppercase text-reset fs-7" to="/locations">locations</Link>
