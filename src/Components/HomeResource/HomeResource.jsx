@@ -6,7 +6,7 @@ import Illustarion from '../Illustration/Illustarion';
 
 export default function HomeResource() {
   return (
-    <div className='row gy-4 mb-5'>
+    <div className='row gy-4 mb-1'>
       <div className="col-lg-4">
         <Illustarion image={passionate} title='passionate'>
             Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.
