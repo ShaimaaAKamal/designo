@@ -70,8 +70,11 @@ body{
 .fs-sm{
     font-size: .7rem;
 }
+.bg{
+     background-image:url('./assets/home/desktop/bg-pattern-hero-home.svg'),linear-gradient(rgba(231, 129, 107,1),rgba(231, 129, 107,1));
+}
 .homeCaption{
-    background-image:url('./assets/home/desktop/bg-pattern-hero-home.svg'),linear-gradient(rgba(231, 129, 107,1),rgba(231, 129, 107,1));
+     @extend .bg;
     background-repeat: no-repeat;
     background-position: right top;
     height:92vh !important;
@@ -96,6 +99,11 @@ body{
         }
     }
 
+    .letstalk{
+        @extend .bg;
+        position: relative;
+        top:60px
+    }
 footer{
     padding-top: 50px;
     .imageBorderBottom{
