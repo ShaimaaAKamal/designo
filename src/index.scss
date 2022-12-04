@@ -133,7 +133,6 @@ body{
     
     .AboutHeadingInfo{
          background-image:url('./assets/about/desktop/bg-pattern-hero-about-desktop.svg'),linear-gradient(rgba(231, 129, 107,1),rgba(231, 129, 107,1));
-        border-radius: 0 0 1rem 1rem;
     }
     .img{
         border-radius: 1rem 1rem 0 0;
@@ -213,6 +212,15 @@ footer{
             width:80%;
         }
     }
+     .AboutHeadingInfo{
+        border-radius: 0 0 1rem 1rem;
+    }
+    .talentInfo{
+        border-radius: 0 0 1rem 1rem;
+    }
+    .talentImg{
+        border-radius: 1rem 1rem 0 0;
+    }
     
     footer{
              .footerBorderBottom{
@@ -265,6 +273,15 @@ footer{
     }
     .img{
         border-radius: 0 1rem 1rem 0;
+    }
+    .bgLight{
+        background-color: #FFF3EF;
+    }
+    .talentInfo{
+        border-radius: 0 1rem 1rem  0;
+    }
+    .talentImg{
+        border-radius: 1rem 0 0 1rem;
     }
   }
 }
