@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeCard from '../HomeCard/HomeCard';
+import HomeCard from '../../HomeCard/HomeCard';
 
 
 export default function DesignRouteCards({DesignRoutes}) {

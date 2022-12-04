@@ -1,8 +1,8 @@
 import React from 'react';
-import resource from '../../assets/home/desktop/illustration-resourceful.svg';
-import friendly from '../../assets/home/desktop/illustration-friendly.svg';
-import passionate from '../../assets/home/desktop/illustration-passionate.svg';
-import Illustarion from '../Illustration/Illustarion';
+import resource from '../../../assets/home/desktop/illustration-resourceful.svg';
+import friendly from '../../../assets/home/desktop/illustration-friendly.svg';
+import passionate from '../../../assets/home/desktop/illustration-passionate.svg';
+import Illustarion from '../../Illustration/Illustarion';
 
 export default function HomeResource() {
   return (

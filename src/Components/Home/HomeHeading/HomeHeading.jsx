@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../assets/home/desktop/image-hero-phone.png';
+import image from '../../../assets/home/desktop/image-hero-phone.png';
 
 export default function HomeHeading() {
   return (
