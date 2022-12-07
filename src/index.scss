@@ -20,6 +20,10 @@ $lightGray:#F1F3F5;
         }
     }
 }
+ .bgLight{
+        background-image:url('./assets/shared/desktop/bg-pattern-two-circles.svg'),linear-gradient(#FFF3EF,#FFF3EF);
+        background-position:center center;
+    }
 .roundedBottom{
     border-radius: 0 0 1rem 1rem;
 }
@@ -143,6 +147,12 @@ body{
       div.AboutLocationWidth{
         left:25%;
     }
+    .locationImg{
+        border-radius: 1rem 1rem 0 0 !important;
+    }
+    .locationInfo{
+        border-radius: 0 0 1rem 1rem !important;
+    }
 footer{
     padding-top: 50px;
     .imageBorderBottom{
@@ -244,6 +254,12 @@ footer{
       div.AboutLocationWidth{
         left:35%;
     }
+     .locationImg{
+        border-radius: 1rem  !important;
+    }
+    .locationInfo{
+        border-radius: 1rem !important;
+    }
     
     footer{
              .footerBorderBottom{
@@ -263,6 +279,9 @@ footer{
     border-radius: 1rem 1rem 0 0 ;
 }
   body{
+     .left{
+        order:2
+     }
       .real{
         order:3;
         .talentImg{
@@ -306,9 +325,7 @@ footer{
     .img{
         border-radius: 0 1rem 1rem 0;
     }
-    .bgLight{
-        background-color: #FFF3EF;
-    }
+   
     .talentInfo{
         border-radius: 0 1rem 1rem  0;
     }

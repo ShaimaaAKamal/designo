@@ -6,6 +6,7 @@ import WebDesign from '../WebDesign/WebDesign';
 import AppDesign from '../AppDesign/AppDesign';
 import GraphicDesign from '../GraphicDesign/GraphicDesign';
 import About from '../About/About';
+import Locations from "../Locations/Locations";
 
 function App() {
    const routes=createBrowserRouter([
@@ -14,7 +15,8 @@ function App() {
      {path:'web',element:<WebDesign/>},
      {path:'app',element:<AppDesign/>},
      {path:'graphic',element:<GraphicDesign/>},
-     {path:'about',element:<About/>}
+     {path:'about',element:<About/>},
+     {path:'locations',element:<Locations/>}
     ]}
    ]
    )
