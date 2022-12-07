@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+import ContactCard from '../ContactCard/ContactCard';
+import AboutLocation from '../About/AboutLocation/AboutLocation';
 
 export default function Contact() {
   return (
-    <div>Contact</div>
+    <div className='container-lg py-5'>
+        <ContactCard/>
+        <AboutLocation>Locations</AboutLocation>
+    </div>
   )
 }

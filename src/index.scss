@@ -98,7 +98,7 @@ body{
             background-image:url('./assets/shared/desktop/bg-pattern-small-circle.svg'),linear-gradient(rgba(231, 129, 107,1),rgba(231, 129, 107,1));
 }
 .homeCaption{
-         background-image:url('./assets/home/desktop/bg-pattern-hero-home.svg'),linear-gradient(rgba(231, 129, 107,1),rgba(231, 129, 107,1));
+    background-image:url('./assets/home/desktop/bg-pattern-hero-home.svg'),linear-gradient(rgba(231, 129, 107,1),rgba(231, 129, 107,1));
     background-repeat: no-repeat;
     background-position: right top;
     height:92vh !important;
@@ -152,6 +152,31 @@ body{
     }
     .locationInfo{
         border-radius: 0 0 1rem 1rem !important;
+    }
+    .contactCaption{
+      
+      background-position: left center;
+      height:80vh !important;
+    }
+    .form-control{
+        background-color: transparent !important;
+        border:none !important;
+        border-radius: 0 !important;
+        border-bottom:1px solid #fff !important;
+        box-shadow: unset !important;
+        font-size: .9rem;
+
+        color:#fff;
+        &::placeholder{
+            color:#FDBDB3;
+            font-size: .9rem;
+        }
+        &:focus{
+            color:#fff;
+            border-bottom:2px solid #fff !important;
+            border-radius: .5px !important;
+            font-size: .9rem;
+        }
     }
 footer{
     padding-top: 50px;
@@ -260,6 +285,9 @@ footer{
     .locationInfo{
         border-radius: 1rem !important;
     }
+    .contactHeading{
+      width:80%;
+    } 
     
     footer{
              .footerBorderBottom{
@@ -338,6 +366,10 @@ footer{
     div.AboutLocationWidth{
         left:15%;
     }
+     .contactHeading{
+      width:75%;
+    } 
+    
   }
 }
 
