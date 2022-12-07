@@ -137,6 +137,12 @@ body{
     .img{
         border-radius: 1rem 1rem 0 0;
     }
+    .AboutLocationWidth{
+        width:50%;
+    }
+      div.AboutLocationWidth{
+        left:25%;
+    }
 footer{
     padding-top: 50px;
     .imageBorderBottom{
@@ -156,6 +162,17 @@ footer{
     }
 }
 
+}
+
+@media screen and (min-width:576px){
+    body{
+        .AboutLocationWidth{
+        width:40%;
+    }
+      div.AboutLocationWidth{
+        left:30%;
+    }
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -221,6 +238,12 @@ footer{
     .talentImg{
         border-radius: 1rem 1rem 0 0;
     }
+      .AboutLocationWidth{
+        width:30%;
+    }
+      div.AboutLocationWidth{
+        left:35%;
+    }
     
     footer{
              .footerBorderBottom{
@@ -283,6 +306,12 @@ footer{
     .talentImg{
         border-radius: 1rem 0 0 1rem;
     }
+    .AboutLocationWidth{
+        width:70%;
+    }
+    div.AboutLocationWidth{
+        left:15%;
+    }
   }
 }
 
@@ -303,7 +332,12 @@ footer{
             width:50%;
         }
     }
-   
+    .AboutLocationWidth{
+        width:60%;
+    }
+    div.AboutLocationWidth{
+        left:20%;
+    }
   }
 }
 
