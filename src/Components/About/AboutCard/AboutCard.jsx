@@ -3,7 +3,7 @@ import React from 'react'
 export default function AboutCard({images,title,messages,children}) {
     const zindex=children?'real':''
   return (
-         <div className="row gx-0 py-md-5">
+         <div className="row gx-0 py-md-5 my-4">
              <div className={`col-lg-5 ${zindex}`}>
               <div>
                   <img src={images[0]} alt="about image" className='w-100 imgLarge talentImg' />
