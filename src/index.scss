@@ -263,6 +263,15 @@ footer{
     border-radius: 1rem 1rem 0 0 ;
 }
   body{
+      .real{
+        order:3;
+        .talentImg{
+            border-radius: 0 1rem 1rem 0;
+        }
+      }
+      .real + div{
+        border-radius: 1rem 0 0 1rem;
+      }
       .imgSmall{
             display: none;
         }
