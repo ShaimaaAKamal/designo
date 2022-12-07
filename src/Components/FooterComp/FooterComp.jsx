@@ -5,7 +5,8 @@ import logo from '../../assets/shared/desktop/logo-light.png'
 export default function FooterComp() {
   return (
     <footer className='bgBlack'>
-      <div className="container-lg p-4 pb-md-0">
+      <div className="parent">
+         <div className="container-lg p-4 pb-md-0">
          <div className='d-flex align-items-center flex-column footerBorderBottom flex-md-row justify-content-md-between'>
           <div className='text-center text-md-start imageBorderBottom p-2 py-4 '>
               <img src={logo} alt="logo" className='w-50' />
@@ -47,6 +48,7 @@ export default function FooterComp() {
                  </svg>
             </div>
          </div>
+      </div>
       </div>
     </footer>
   )

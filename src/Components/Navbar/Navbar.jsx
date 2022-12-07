@@ -17,7 +17,8 @@ export default function Navbar() {
       });
   },[])
   return (
-   <nav className="navbar navbar-expand-lg">
+    <div className="parent">
+       <nav className="navbar navbar-expand-lg">
       <div className="container-lg px-0">
         <Link className="navbar-brand ps-4 navLogo" to="">
           <img src={logo} alt='logo' className='w-50'/>
@@ -47,5 +48,6 @@ export default function Navbar() {
         </div>
       </div>
 </nav>
+    </div>
   )
 }

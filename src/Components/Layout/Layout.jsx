@@ -6,9 +6,11 @@ import FooterComp from '../FooterComp/FooterComp';
 export default function Layout() {
   return (
     <>
-      <Navbar/>
-      <Outlet/>
-      <FooterComp/>
+        <Navbar/>
+        <div className="parent">
+            <Outlet/>
+        </div>
+        <FooterComp/>
     </>
   )
 }
