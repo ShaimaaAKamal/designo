@@ -77,6 +77,14 @@ body .lightBtn:hover {
   background-color: #FFAD9B;
   color: #fff;
 }
+body nav {
+  position: relative;
+  top: 0;
+  z-index: 999;
+}
+body .bgCover {
+  z-index: 2;
+}
 body .navLogo {
   width: 75%;
 }
@@ -97,7 +105,7 @@ body .homeCaption {
   background-image: url("./assets/home/desktop/bg-pattern-hero-home.svg"), linear-gradient(rgb(231, 129, 107), rgb(231, 129, 107));
   background-repeat: no-repeat;
   background-position: right top;
-  height: 92vh !important;
+  height: 100vh !important;
   overflow: hidden;
 }
 body .homeCaption .paragWidth {
