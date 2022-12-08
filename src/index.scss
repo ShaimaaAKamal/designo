@@ -109,7 +109,7 @@ nav{
     background-image:url('./assets/home/desktop/bg-pattern-hero-home.svg'),linear-gradient(rgba(231, 129, 107,1),rgba(231, 129, 107,1));
     background-repeat: no-repeat;
     background-position: right top;
-    height:92vh !important;
+    height:140vh !important;
     overflow: hidden;
     .paragWidth{
     width:90%;
@@ -210,8 +210,17 @@ footer{
 
 }
 
+@media screen and (min-width:400px){
+  body{
+
+        .homeCaption{
+    height:100vh !important;
+  }
+}   
+}
 @media screen and (min-width:576px){
     body{
+
         .AboutLocationWidth{
         width:40%;
     }
