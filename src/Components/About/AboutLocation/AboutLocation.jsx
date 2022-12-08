@@ -1,10 +1,15 @@
 import React from 'react';
+import {  useNavigate } from 'react-router-dom'
 import canada from '../../../assets/shared/desktop/illustration-canada.svg';
 import australia from '../../../assets/shared/desktop/illustration-australia.svg';
 import unitedKingdom from '../../../assets/shared/desktop/illustration-united-kingdom.svg'
 
 export default function AboutLocation({children}) {
-    const locations=['Canada','Australia','unitedKingdom']
+   const navigate=useNavigate();
+   const handleClick=()=>{
+    navigate('/locations');
+  }
+    const locations=['canada','australia','unitedKingdom']
     const images=[canada,australia,unitedKingdom]
     const btnText=children ? 'see location' : 'learn more'
   return (
@@ -17,7 +22,7 @@ export default function AboutLocation({children}) {
                 </div>
                 <div className='text-center mt-4'>
                      <h5 className='text-uppercase ls fw-normal'>{location}</h5>
-                     <button className='lightBtn rounded-2 position-relative text-white mt-2 text-uppercase'>{btnText}</button>
+                     <button className='lightBtn rounded-2 position-relative text-white mt-2 text-uppercase' onClick={handleClick}>{btnText}</button>
                 </div>
             </div>
         </div>)}
