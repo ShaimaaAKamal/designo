@@ -2,23 +2,24 @@ import React, { useEffect } from 'react';
 import logo from '../../assets/shared/desktop/logo-dark.png';
 import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+export default function Navbar({handleBg}) {
   useEffect(()=>{
      const close=document.querySelector('#close');
      const menu=document.querySelector('#menu');
-     const collapse=document.querySelector('collapse');
       menu.addEventListener('click',function(){
         menu.classList.add('d-none');
         close.classList.remove('d-none');
+        handleBg('open');
       });
         close.addEventListener('click',function(){
         close.classList.add('d-none');
         menu.classList.remove('d-none');
+        handleBg('close');
       });
   },[])
   return (
     <div className="parent">
-       <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg pt-3 pb-0">
       <div className="container-lg px-0">
         <Link className="navbar-brand ps-4 navLogo" to="">
           <img src={logo} alt='logo' className='w-50'/>
@@ -34,7 +35,7 @@ export default function Navbar() {
           </svg>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto  mb-2 mb-md-0 p-3">
+          <ul className="navbar-nav ms-auto  mb-md-0 p-3">
             <li className="nav-item">
               <Link className="nav-link text-uppercase text-reset active fs-7" aria-current="page" to="/About">our company</Link>
             </li>

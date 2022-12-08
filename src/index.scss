@@ -81,6 +81,14 @@ body{
 
             }
 }
+nav{
+    position: relative;
+    top:0;
+    z-index:999;
+}
+.bgCover{
+    z-index:2;
+}
 .navLogo{
     width:75%;
 }

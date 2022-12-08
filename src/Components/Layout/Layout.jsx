@@ -5,20 +5,31 @@ import FooterComp from '../FooterComp/FooterComp';
 
 export default function Layout() {
   const location=useLocation();
-  const path=location.pathname
+  const path=location.pathname;
+  const handleBg=(stat)=>{
+       const bg=document.querySelector('.bgCover');
+       if(stat === 'open')
+        bg.classList.remove('d-none');
+       else  bg.classList.add('d-none');
+
+
+  }
    useEffect(()=>{
     const collapse=document.querySelector('.collapse');
     if(collapse.classList.contains('show'))
     { const menu=document.querySelector('#menu');
       const close=document.querySelector('#close');
+      const bg=document.querySelector('.bgCover');
       collapse.classList.remove('show');
       close.classList.add('d-none');
       menu.classList.remove('d-none');
+      bg.classList.add('d-none');
      }
   },[path]);
   return (
     <>
-        <Navbar/>
+        <Navbar handleBg={(stat)=>handleBg(stat)}/>
+        <div className='vh-100 position-fixed w-100 bg-black d-none bg-opacity-50 bgCover'></div>
         <div className="parent my-4">
             <Outlet/>
         </div>
