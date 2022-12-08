@@ -3,7 +3,7 @@ import ContactForm from '../Contact/ContactForm/ContactForm';
 
 export default function ContactCard() {
   return (
-    <section className='homeCaption contactCaption rounded-3 mb-5'>
+    <section className='homeCaption contactCaption rounded-3 mb-5 py-5 py-lg-0'>
         <div className="row align-items-center   h-100 mx-lg-5 px-4">
           <div className="col-lg-7">
             <div className='text-white text-center text-md-start'>

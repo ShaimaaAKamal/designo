@@ -109,7 +109,8 @@ nav{
     background-image:url('./assets/home/desktop/bg-pattern-hero-home.svg'),linear-gradient(rgba(231, 129, 107,1),rgba(231, 129, 107,1));
     background-repeat: no-repeat;
     background-position: right top;
-    height:140vh !important;
+    // height:110vh !important;
+    height:750px !important;
     overflow: hidden;
     .paragWidth{
     width:90%;
@@ -118,7 +119,8 @@ nav{
         z-index: 200;
     }
      .homeImage{
-            bottom:-350px !important;
+            position: relative;
+            bottom:100px !important;
           }
 }
  .hoverCard{
@@ -210,17 +212,8 @@ footer{
 
 }
 
-@media screen and (min-width:400px){
-  body{
-
-        .homeCaption{
-    height:100vh !important;
-  }
-}   
-}
 @media screen and (min-width:576px){
     body{
-
         .AboutLocationWidth{
         width:40%;
     }
@@ -229,6 +222,7 @@ footer{
     }
     }
 }
+
 
 @media screen and (min-width:768px) {
 .roundedBottom{
@@ -275,7 +269,7 @@ footer{
     .homeCaption{
          .paragWidth{
             width:85%;
-                        }
+                    }
        
                 }
    
@@ -350,12 +344,14 @@ footer{
         }
 
     .homeCaption{
+
              height:65vh !important;
             .paragWidth{
             width:50%;
                         }
                 
           .homeImage{
+            position: absolute;
             right:-100px;
             bottom:-320px !important;
           }}

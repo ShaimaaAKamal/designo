@@ -16,7 +16,7 @@ export default function HomeHeading() {
             <p className='small paragWidth mx-auto ms-lg-0 py-2'>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
             <button className='darkBtn rounded-2 position-relative learnMoreBtn' onClick={handleClick}>LEARN MORE</button>
         </div>
-        <div className='text-center homeImage position-absolute'>
+        <div className='text-center homeImage'>
             <img src={image} alt="imagePhoto" className=''/>
         </div>
     </section>
