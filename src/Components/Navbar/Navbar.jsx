@@ -2,7 +2,10 @@ import React, { useEffect } from 'react';
 import logo from '../../assets/shared/desktop/logo-dark.png';
 import { Link } from 'react-router-dom';
 
-export default function Navbar({handleBg}) {
+export default function Navbar({handleBg,handleNav}) {
+  const handleRoute=(e)=>{
+    handleNav();
+  }
   useEffect(()=>{
      const close=document.querySelector('#close');
      const menu=document.querySelector('#menu');
@@ -21,7 +24,7 @@ export default function Navbar({handleBg}) {
     <div className="parent">
       <nav className="navbar navbar-expand-lg pt-3 pb-0">
       <div className="container-lg px-0">
-        <Link className="navbar-brand ps-4 navLogo" to="">
+        <Link className="navbar-brand ps-4 navLogo" to="" onClick={handleRoute}>
           <img src={logo} alt='logo' className='w-50'/>
         </Link>
         <button className="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,13 +40,13 @@ export default function Navbar({handleBg}) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto  mb-md-0 p-3">
             <li className="nav-item">
-              <Link className="nav-link text-uppercase text-reset active fs-7" aria-current="page" to="/About">our company</Link>
+              <Link className="nav-link text-uppercase text-reset active fs-7" aria-current="page" to="/About" onClick={handleRoute}>our company</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-uppercase text-reset fs-7" to="/locations">locations</Link>
+              <Link className="nav-link text-uppercase text-reset fs-7" to="/locations" onClick={handleRoute}>locations</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-uppercase text-reset  fs-7" to="/contact">contact</Link>
+              <Link className="nav-link text-uppercase text-reset  fs-7" to="/contact" onClick={handleRoute}>contact</Link>
             </li>
           </ul>
         </div>
