@@ -165,19 +165,19 @@ body{
         border-bottom:1px solid #fff !important;
         box-shadow: unset !important;
         font-size: .9rem;
-
         color:#fff;
         &::placeholder{
             color:#FDBDB3;
             font-size: .9rem;
         }
         &:focus{
-            color:#fff;
+            color:#fff !important;
             border-bottom:2px solid #fff !important;
             border-radius: .5px !important;
             font-size: .9rem;
         }
     }
+  
 footer{
     padding-top: 50px;
     .imageBorderBottom{
