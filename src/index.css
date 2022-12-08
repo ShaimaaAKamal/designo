@@ -105,7 +105,7 @@ body .homeCaption {
   background-image: url("./assets/home/desktop/bg-pattern-hero-home.svg"), linear-gradient(rgb(231, 129, 107), rgb(231, 129, 107));
   background-repeat: no-repeat;
   background-position: right top;
-  height: 120vh !important;
+  height: 140vh !important;
   overflow: hidden;
 }
 body .homeCaption .paragWidth {
