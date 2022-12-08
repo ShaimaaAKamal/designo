@@ -1,15 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../assets/shared/desktop/logo-light.png'
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import logo from '../../assets/shared/desktop/logo-light.png';
 
 export default function FooterComp() {
+  const location =useLocation();
+  const footerPadding=(location.pathname==='/contact')?'':'py-4'
   return (
     <footer className='bgBlack'>
       <div className="parent">
-         <div className="container-lg p-4 pb-md-0">
+         <div className={`container-lg px-4 pb-md-0 ${footerPadding}`}>
          <div className='d-flex align-items-center flex-column footerBorderBottom flex-md-row justify-content-md-between'>
           <div className='text-center text-md-start imageBorderBottom p-2 py-4 '>
-              <img src={logo} alt="logo" className='w-50' />
+            <Link to=''><img src={logo} alt="logo" className='w-50' /></Link>
            </div>
             <div className='d-flex flex-column p-3 align-items-center flex-md-row links'>
                   <Link className="text-uppercase  text-white text-decoration-none p-2" aria-current="about page" to="/About">our company</Link>

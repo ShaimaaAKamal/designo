@@ -4,7 +4,7 @@ import AboutLocation from '../About/AboutLocation/AboutLocation';
 
 export default function Contact() {
   return (
-    <div className='container-lg py-5'>
+    <div className='container-lg pb-5'>
         <ContactCard/>
         <AboutLocation>Locations</AboutLocation>
     </div>

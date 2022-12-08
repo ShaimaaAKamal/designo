@@ -7,7 +7,7 @@ export default function Layout() {
   return (
     <>
         <Navbar/>
-        <div className="parent">
+        <div className="parent my-4">
             <Outlet/>
         </div>
         <FooterComp/>

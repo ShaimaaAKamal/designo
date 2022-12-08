@@ -3,7 +3,7 @@ import React from 'react'
 export default function LocationCard({Large,Medium,title,details,children}) {
     const left=children?'left':'';
   return (
-    <div className='row g-md-4 my-3'>
+    <div className='row g-md-4 mb-4'>
      <div className={`col-lg-4 ${left}`}>
          <div>
               <img src={Large} alt={title} className="w-100 d-none d-lg-inline-block rounded-3" />
